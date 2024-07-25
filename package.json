@@ -1,5 +1,20 @@
 {
   "name": "zotero_recommender",
+  "version": "0.0.1",
+  "description": "Semantic Scholar recommendations based on your Zotero collections",
+  "keywords": [
+    "zotero",
+    "semantic scholar",
+    "recommendations",
+    "scientific papers"
+  ],
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/00sapo/zotero_recommender",
+    "type": "git"
+  },
+  "author": "00sapo",
+  "license": "GPL-3.0",
   "packageManager": "yarn@4.3.1",
   "type": "module",
   "dependencies": {
