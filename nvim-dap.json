@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Yarn",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": [
+        "node"
+      ],
+      "program": "src/index.js",
+      "cwd": "${workspaceFolder}",
+      "env": {}
+    }
+  ]
+}

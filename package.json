@@ -1,4 +1,13 @@
 {
-  "name": "zotero_suggestion",
-  "packageManager": "yarn@4.3.1"
+  "name": "zotero_recommender",
+  "packageManager": "yarn@4.3.1",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "blessed": "^0.1.81",
+    "open": "^10.1.0",
+    "progress": "^2.0.3",
+    "sqlite3": "^5.1.7",
+    "yargs": "^17.7.2"
+  }
 }
