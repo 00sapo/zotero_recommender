@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 import { readFileSync, writeFileSync, existsSync } from 'fs';

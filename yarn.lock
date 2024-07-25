@@ -1858,9 +1858,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zotero_suggestion@workspace:.":
+"zotero_recommender@workspace:.":
   version: 0.0.0-use.local
-  resolution: "zotero_suggestion@workspace:."
+  resolution: "zotero_recommender@workspace:."
   dependencies:
     axios: "npm:^1.7.2"
     blessed: "npm:^0.1.81"
