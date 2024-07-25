@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 import { readFileSync, writeFileSync, existsSync } from 'fs';
@@ -138,6 +139,11 @@ async function request_paper_id(title) {
     let paper_id = results["data"][0]["paperId"];
     return paper_id;
   } catch (error) {
+    if (error.response.status === 429) {
+      console.error(`\nRate limit exceeded. Waiting for a minute...`);
+      await new Promise(r => setTimeout(r, 60000));
+      return request_paper_id(title);
+    }
     console.error(`\nError searching for "\x1b[3m${title}\x1b[23m":\n\t${error}, ${error.response.data.error}`);
     return null;
   }
